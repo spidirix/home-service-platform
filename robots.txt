@@ -1,0 +1,14 @@
+# robots.txt for Glamorous Beauty Salon
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.glamorousbeauty.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10
+
+# Disallow specific areas (if any)
+# Disallow: /admin/
+# Disallow: /private/

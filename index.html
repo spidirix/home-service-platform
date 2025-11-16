@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Glamorous Beauty Salon | Professional Hair Services & Extensions</title>
+    <meta name="description" content="Transform your look at Glamorous Beauty Salon. Expert hair styling, balayage, highlights, color, and extensions. Book your appointment today! Call (571) 224-2908">
+    <meta name="keywords" content="beauty salon, hair salon, balayage, highlights, hair extensions, hair color, professional stylist, beauty services">
+    <meta name="author" content="Glamorous Beauty Salon">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Glamorous Beauty Salon | Professional Hair Services">
+    <meta property="og:description" content="Beautiful. Glamorous. Confident. Expert hair styling and beauty services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.glamorousbeauty.com">
+    <meta property="og:image" content="./images/hero-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Glamorous Beauty Salon">
+    <meta name="twitter:description" content="Beautiful. Glamorous. Confident. Expert hair styling services.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.glamorousbeauty.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Glamorous Beauty Salon",
+      "image": "https://www.glamorousbeauty.com/images/hero-image.jpg",
+      "description": "Professional beauty salon offering hair styling, balayage, highlights, color, and extensions.",
+      "telephone": "+1-571-224-2908",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Beauty Lane",
+        "addressLocality": "Your City",
+        "addressRegion": "State",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "150"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <button class="search-btn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="#login" class="login-btn">Log In</a>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1560869713-bf165a4e6fcb?w=800&q=80" alt="Beautiful women showcasing our salon services" width="800" height="600" loading="eager">
+                </div>
+                
+                <div class="hero-text">
+                    <a href="tel:+15712242908" class="phone-number" aria-label="Call us at (571) 224-2908">
+                        (571) 224-2908
+                    </a>
+                    <h1 class="hero-title">
+                        <span class="title-line">BEAUTIFUL</span>
+                        <span class="title-line">GLAMOROUS</span>
+                        <span class="title-line">CONFIDENT</span>
+                    </h1>
+                    <button class="cta-button" onclick="window.location.href='#booking'">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">OUR SERVICES</h2>
+            
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&q=80" alt="Highlights and color service" width="400" height="500" loading="lazy">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-title">Highlights<br>& color</h3>
+                        <button class="service-btn" onclick="window.location.href='#booking'">SHOP NOW</button>
+                    </div>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&q=80" alt="Balayage service" width="400" height="500" loading="lazy">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-title">Balayage<br><span class="service-price">$500</span></h3>
+                        <button class="service-btn" onclick="window.location.href='#booking'">SHOP NOW</button>
+                    </div>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&q=80" alt="Hair extensions service" width="400" height="500" loading="lazy">
+                    </div>
+                    <div class="service-info">
+                        <h3 class="service-title">Hair<br>Extensions</h3>
+                        <button class="service-btn" onclick="window.location.href='#booking'">SHOP NOW</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">CUSTOMER REVIEWS</h2>
+            
+            <div class="reviews-content">
+                <div class="review-card">
+                    <p class="review-text">
+                        Amazing experience!<br>
+                        My stylist did a fantastic<br>
+                        job, and I love my new look.
+                    </p>
+                    <div class="stars" aria-label="5 out of 5 stars">
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                    </div>
+                    <p class="reviewer-name">- Sarah M.</p>
+                </div>
+                
+                <div class="review-card">
+                    <p class="review-text">
+                        The best salon in town!<br>
+                        Professional staff and<br>
+                        beautiful results every time.
+                    </p>
+                    <div class="stars" aria-label="5 out of 5 stars">
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                    </div>
+                    <p class="reviewer-name">- Jennifer L.</p>
+                </div>
+                
+                <div class="review-card">
+                    <p class="review-text">
+                        I'm obsessed with my<br>
+                        balayage! The color is<br>
+                        perfect and so natural.
+                    </p>
+                    <div class="stars" aria-label="5 out of 5 stars">
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                        <span>⭐</span>
+                    </div>
+                    <p class="reviewer-name">- Ashley K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At Glamorous Beauty Salon, we believe every client deserves to feel beautiful, glamorous, and confident. Our team of expert stylists brings years of experience and passion to every appointment.</p>
+                    <p>We specialize in the latest hair techniques including balayage, highlights, custom color, and premium hair extensions. Using only the finest products, we ensure your hair looks stunning and stays healthy.</p>
+                    <p>Our commitment to excellence and personalized service has made us the premier choice for beauty services in the area.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80" alt="Our beautiful salon interior" width="600" height="400" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">BOOK YOUR APPOINTMENT</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="highlights">Highlights & Color</option>
+                            <option value="balayage">Balayage</option>
+                            <option value="extensions">Hair Extensions</option>
+                            <option value="styling">Hair Styling</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time *</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Notes</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">SUBMIT BOOKING</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT US</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <a href="tel:+15712242908">(571) 224-2908</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <a href="mailto:info@glamorousbeauty.com">info@glamorousbeauty.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>123 Beauty Lane<br>Your City, State 12345</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                        Saturday: 9:00 AM - 5:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0784913469234!2d-77.0368707!3d38.9071923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU0JzI1LjkiTiA3N8KwMDInMTIuNyJX!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Glamorous Beauty Salon Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Glamorous Beauty Salon</h3>
+                    <p>Beautiful. Glamorous. Confident.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Highlights & Color</a></li>
+                        <li><a href="#services">Balayage</a></li>
+                        <li><a href="#services">Hair Extensions</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Glamorous Beauty Salon. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
